@@ -7079,9 +7079,27 @@
       "arrangement": "RODONAVES - 2026-11-10 08:19:41",
       "itens": 1,
       "task": "https://zecore.zebrands.mx/app/delivery-task/5b8f55ecaa"
+    },
+    "SAL-ORD-2611039f714144|121135": {
+      "data": "2026-11-11T16:01:56-03:00",
+      "sales_order": "SAL-ORD-2611039f714144",
+      "nf": "121135",
+      "carrier": "Rodonaves",
+      "status_transportadora": "ENTREGA FINALIZADA",
+      "master_guide": "35261142418313000104550010001211351224595417",
+      "arrangement": "RODONAVES - 2026-11-09 08:14:45",
+      "itens": 2,
+      "task": "https://zecore.zebrands.mx/app/delivery-task/e72a85857c"
+    },
+    "SAL-ORD-261026bed2fedf|119414": {
+      "data": "2026-11-11T16:02:26-03:00",
+      "sales_order": "SAL-ORD-261026bed2fedf",
+      "nf": "119414",
+      "carrier": "Mira",
+      "origem": "ja_tinha_baixa"
     }
   },
-  "atualizado_em": "2026-11-11T15:25:22-03:00",
+  "atualizado_em": "2026-11-11T16:02:26-03:00",
   "problemas": {
     "SAL-ORD-2610258ac86b05|119183": {
       "vezes": 1,
@@ -7095,12 +7113,6 @@
       "motivo": "nenhum item pendente da NF 119415 neste pedido",
       "avisado_em": "2026-11-11T09:01:17-03:00"
     },
-    "SAL-ORD-261026bed2fedf|119414": {
-      "vezes": 1,
-      "ultima": "2026-11-11T13:55:37-03:00",
-      "motivo": "Confirmei o Submit mas não consegui verificar que foi aceito. Confira o documento antes de rodar de novo — veja debug/",
-      "avisado_em": "2026-11-11T13:55:37-03:00"
-    },
     "SAL-ORD-261109c9e6569f|121476": {
       "vezes": 1,
       "ultima": "2026-11-11T14:07:27-03:00",
@@ -7112,6 +7124,12 @@
       "ultima": "2026-11-11T14:09:54-03:00",
       "motivo": "Depois de salvar o botão não virou Submit — veja debug/",
       "avisado_em": "2026-11-11T14:09:54-03:00"
+    },
+    "SAL-ORD-261108640f2b2d|121036": {
+      "vezes": 1,
+      "ultima": "2026-11-11T16:02:21-03:00",
+      "motivo": "Depois de salvar o botão não virou Submit — veja debug/",
+      "avisado_em": "2026-11-11T16:02:21-03:00"
     }
   }
 }
