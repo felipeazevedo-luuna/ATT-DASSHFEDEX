@@ -6237,9 +6237,383 @@
       "nf": "120471",
       "carrier": "Rodonaves",
       "origem": "ja_tinha_baixa"
+    },
+    "SAL-ORD-2611045a4fe6cd|120519": {
+      "data": "2026-11-11T08:22:27-03:00",
+      "sales_order": "SAL-ORD-2611045a4fe6cd",
+      "nf": "120519",
+      "carrier": "Rodonaves",
+      "status_transportadora": "ENTREGA FINALIZADA",
+      "master_guide": "35261142418313000104550010001205191878225353",
+      "arrangement": "RODONAVES - 2026-11-05 08:22:15",
+      "itens": 1,
+      "task": "https://zecore.zebrands.mx/app/delivery-task/efdd3d8c8b"
+    },
+    "SAL-ORD-26110529914e1e|120524": {
+      "data": "2026-11-11T08:23:04-03:00",
+      "sales_order": "SAL-ORD-26110529914e1e",
+      "nf": "120524",
+      "carrier": "Rodonaves",
+      "status_transportadora": "ENTREGA FINALIZADA",
+      "master_guide": "35261142418313000104550010001205241878241863",
+      "arrangement": "RODONAVES - 2026-11-05 08:22:15",
+      "itens": 1,
+      "task": "https://zecore.zebrands.mx/app/delivery-task/2642ae83f3"
+    },
+    "SAL-ORD-26110784a33bff|121108": {
+      "data": "2026-11-11T08:23:40-03:00",
+      "sales_order": "SAL-ORD-26110784a33bff",
+      "nf": "121108",
+      "carrier": "Rodonaves",
+      "status_transportadora": "ENTREGA FINALIZADA",
+      "master_guide": "35261142418313000104550010001211081224552885",
+      "arrangement": "RODONAVES - 2026-11-09 08:14:45",
+      "itens": 1,
+      "task": "https://zecore.zebrands.mx/app/delivery-task/f9a54796f8"
+    },
+    "SAL-ORD-261031f4bffb8a|120518": {
+      "data": "2026-11-11T08:24:16-03:00",
+      "sales_order": "SAL-ORD-261031f4bffb8a",
+      "nf": "120518",
+      "carrier": "Rodonaves",
+      "status_transportadora": "ENTREGA FINALIZADA",
+      "master_guide": "35261142418313000104550010001205181878221105",
+      "arrangement": "RODONAVES - 2026-11-05 08:22:15",
+      "itens": 2,
+      "task": "https://zecore.zebrands.mx/app/delivery-task/91f4aded9f"
+    },
+    "SAL-ORD-2611057385db73|120699": {
+      "data": "2026-11-11T08:24:53-03:00",
+      "sales_order": "SAL-ORD-2611057385db73",
+      "nf": "120699",
+      "carrier": "Rodonaves",
+      "status_transportadora": "ENTREGA FINALIZADA",
+      "master_guide": "35261142418313000104550010001206991889161854",
+      "arrangement": "RODONAVES - 2026-11-05 11:26:57",
+      "itens": 1,
+      "task": "https://zecore.zebrands.mx/app/delivery-task/452b371d31"
+    },
+    "SAL-ORD-261101baeb38d2|121124": {
+      "data": "2026-11-11T08:25:31-03:00",
+      "sales_order": "SAL-ORD-261101baeb38d2",
+      "nf": "121124",
+      "carrier": "Rodonaves",
+      "status_transportadora": "ENTREGA FINALIZADA",
+      "master_guide": "35261142418313000104550010001211241224580351",
+      "arrangement": "RODONAVES - 2026-11-09 08:14:45",
+      "itens": 1,
+      "task": "https://zecore.zebrands.mx/app/delivery-task/82f75adb42"
+    },
+    "SAL-ORD-261103b506ca53|120513": {
+      "data": "2026-11-11T08:26:13-03:00",
+      "sales_order": "SAL-ORD-261103b506ca53",
+      "nf": "120513",
+      "carrier": "Rodonaves",
+      "status_transportadora": "ENTREGA FINALIZADA",
+      "master_guide": "35261142418313000104550010001205131878196376",
+      "arrangement": "RODONAVES - 2026-11-05 08:22:15",
+      "itens": 1,
+      "task": "https://zecore.zebrands.mx/app/delivery-task/749407e979"
+    },
+    "SAL-ORD-2611040b39f797|120525": {
+      "data": "2026-11-11T08:26:50-03:00",
+      "sales_order": "SAL-ORD-2611040b39f797",
+      "nf": "120525",
+      "carrier": "Rodonaves",
+      "status_transportadora": "ENTREGA FINALIZADA",
+      "master_guide": "35261142418313000104550010001205251878246277",
+      "arrangement": "RODONAVES - 2026-11-05 08:22:15",
+      "itens": 1,
+      "task": "https://zecore.zebrands.mx/app/delivery-task/4f943e2c43"
+    },
+    "SAL-ORD-26110464f2433a|120501": {
+      "data": "2026-11-11T08:27:26-03:00",
+      "sales_order": "SAL-ORD-26110464f2433a",
+      "nf": "120501",
+      "carrier": "Rodonaves",
+      "status_transportadora": "ENTREGA FINALIZADA",
+      "master_guide": "35261142418313000104550010001205011878142496",
+      "arrangement": "RODONAVES - 2026-11-05 08:22:15",
+      "itens": 1,
+      "task": "https://zecore.zebrands.mx/app/delivery-task/a8ccdce35f"
+    },
+    "SAL-ORD-2611051fa12857|120510": {
+      "data": "2026-11-11T08:28:03-03:00",
+      "sales_order": "SAL-ORD-2611051fa12857",
+      "nf": "120510",
+      "carrier": "Rodonaves",
+      "status_transportadora": "ENTREGA FINALIZADA",
+      "master_guide": "35261142418313000104550010001205101878180516",
+      "arrangement": "RODONAVES - 2026-11-05 08:22:15",
+      "itens": 1,
+      "task": "https://zecore.zebrands.mx/app/delivery-task/fc75017366"
+    },
+    "SAL-ORD-2611033f28cc94|120517": {
+      "data": "2026-11-11T08:28:39-03:00",
+      "sales_order": "SAL-ORD-2611033f28cc94",
+      "nf": "120517",
+      "carrier": "Rodonaves",
+      "status_transportadora": "ENTREGA FINALIZADA",
+      "master_guide": "35261142418313000104550010001205171878220705",
+      "arrangement": "RODONAVES - 2026-11-05 08:22:15",
+      "itens": 1,
+      "task": "https://zecore.zebrands.mx/app/delivery-task/e61f4bb271"
+    },
+    "SAL-ORD-26110525f85aa1|120695": {
+      "data": "2026-11-11T08:29:16-03:00",
+      "sales_order": "SAL-ORD-26110525f85aa1",
+      "nf": "120695",
+      "carrier": "Rodonaves",
+      "status_transportadora": "ENTREGA FINALIZADA",
+      "master_guide": "35261142418313000104550010001206951889150977",
+      "arrangement": "RODONAVES - 2026-11-05 11:26:57",
+      "itens": 3,
+      "task": "https://zecore.zebrands.mx/app/delivery-task/a3294a9bb5"
+    },
+    "SAL-ORD-2611045de9533a|120697": {
+      "data": "2026-11-11T08:29:52-03:00",
+      "sales_order": "SAL-ORD-2611045de9533a",
+      "nf": "120697",
+      "carrier": "Rodonaves",
+      "status_transportadora": "ENTREGA FINALIZADA",
+      "master_guide": "35261142418313000104550010001206971889156902",
+      "arrangement": "RODONAVES - 2026-11-05 11:26:57",
+      "itens": 1,
+      "task": "https://zecore.zebrands.mx/app/delivery-task/5d247bc801"
+    },
+    "SAL-ORD-261107b16ddc42|121009": {
+      "data": "2026-11-11T08:30:30-03:00",
+      "sales_order": "SAL-ORD-261107b16ddc42",
+      "nf": "121009",
+      "carrier": "Rodonaves",
+      "status_transportadora": "ENTREGA FINALIZADA",
+      "master_guide": "35261142418313000104550010001210091224316326",
+      "arrangement": "RODONAVES - 2026-11-09 08:14:45",
+      "itens": 1,
+      "task": "https://zecore.zebrands.mx/app/arrangement/RODONAVES%20-%202026-11-09%2008%3A14%3A45"
+    },
+    "SAL-ORD-26110632422f82|121031": {
+      "data": "2026-11-11T08:31:07-03:00",
+      "sales_order": "SAL-ORD-26110632422f82",
+      "nf": "121031",
+      "carrier": "Rodonaves",
+      "status_transportadora": "ENTREGA FINALIZADA",
+      "master_guide": "35261142418313000104550010001210311224373100",
+      "arrangement": "RODONAVES - 2026-11-09 08:14:45",
+      "itens": 1,
+      "task": "https://zecore.zebrands.mx/app/delivery-task/2db9a195f9"
+    },
+    "SAL-ORD-261106dee3cf09|121094": {
+      "data": "2026-11-11T08:31:43-03:00",
+      "sales_order": "SAL-ORD-261106dee3cf09",
+      "nf": "121094",
+      "carrier": "Rodonaves",
+      "status_transportadora": "ENTREGA FINALIZADA",
+      "master_guide": "35261142418313000104550010001210941224515540",
+      "arrangement": "RODONAVES - 2026-11-09 08:14:45",
+      "itens": 1,
+      "task": "https://zecore.zebrands.mx/app/delivery-task/0ead4f2e47"
+    },
+    "SAL-ORD-26110715b21307|121107": {
+      "data": "2026-11-11T08:32:19-03:00",
+      "sales_order": "SAL-ORD-26110715b21307",
+      "nf": "121107",
+      "carrier": "Rodonaves",
+      "status_transportadora": "ENTREGA FINALIZADA",
+      "master_guide": "35261142418313000104550010001211071224551776",
+      "arrangement": "RODONAVES - 2026-11-09 08:14:45",
+      "itens": 2,
+      "task": "https://zecore.zebrands.mx/app/delivery-task/68cdfb9ad8"
+    },
+    "SAL-ORD-26102738c55ff4|121113": {
+      "data": "2026-11-11T08:32:56-03:00",
+      "sales_order": "SAL-ORD-26102738c55ff4",
+      "nf": "121113",
+      "carrier": "Rodonaves",
+      "status_transportadora": "ENTREGA FINALIZADA",
+      "master_guide": "35261142418313000104550010001211131224561213",
+      "arrangement": "RODONAVES - 2026-11-09 08:14:45",
+      "itens": 1,
+      "task": "https://zecore.zebrands.mx/app/delivery-task/7866853e60"
+    },
+    "SAL-ORD-2611059c491dee|120514": {
+      "data": "2026-11-11T08:33:32-03:00",
+      "sales_order": "SAL-ORD-2611059c491dee",
+      "nf": "120514",
+      "carrier": "Rodonaves",
+      "status_transportadora": "ENTREGA FINALIZADA",
+      "master_guide": "35261142418313000104550010001205141878204414",
+      "arrangement": "RODONAVES - 2026-11-05 08:22:15",
+      "itens": 3,
+      "task": "https://zecore.zebrands.mx/app/delivery-task/0c16fae05a"
+    },
+    "SAL-ORD-2611066b0c414b|121025": {
+      "data": "2026-11-11T08:34:11-03:00",
+      "sales_order": "SAL-ORD-2611066b0c414b",
+      "nf": "121025",
+      "carrier": "Rodonaves",
+      "status_transportadora": "ENTREGA FINALIZADA",
+      "master_guide": "35261142418313000104550010001210251224354493",
+      "arrangement": "RODONAVES - 2026-11-09 08:14:45",
+      "itens": 1,
+      "task": "https://zecore.zebrands.mx/app/delivery-task/b3f2ca1f11"
+    },
+    "SAL-ORD-261106a367601a|121105": {
+      "data": "2026-11-11T08:34:49-03:00",
+      "sales_order": "SAL-ORD-261106a367601a",
+      "nf": "121105",
+      "carrier": "Rodonaves",
+      "status_transportadora": "ENTREGA FINALIZADA",
+      "master_guide": "35261142418313000104550010001211051224541016",
+      "arrangement": "RODONAVES - 2026-11-09 08:14:45",
+      "itens": 1,
+      "task": "https://zecore.zebrands.mx/app/delivery-task/1bdcfb8d0e"
+    },
+    "SAL-ORD-261102c83edddf|120504": {
+      "data": "2026-11-11T08:35:36-03:00",
+      "sales_order": "SAL-ORD-261102c83edddf",
+      "nf": "120504",
+      "carrier": "Rodonaves",
+      "status_transportadora": "ENTREGA FINALIZADA",
+      "master_guide": "35261142418313000104550010001205041878147759",
+      "arrangement": "RODONAVES - 2026-11-05 08:22:15",
+      "itens": 1,
+      "task": "https://zecore.zebrands.mx/app/delivery-task/9f0f4fe148"
+    },
+    "SAL-ORD-261107edbe3d4f|121016": {
+      "data": "2026-11-11T08:36:23-03:00",
+      "sales_order": "SAL-ORD-261107edbe3d4f",
+      "nf": "121016",
+      "carrier": "Rodonaves",
+      "status_transportadora": "ENTREGA FINALIZADA",
+      "master_guide": "35261142418313000104550010001210161224325613",
+      "arrangement": "RODONAVES - 2026-11-09 08:14:45",
+      "itens": 1,
+      "task": "https://zecore.zebrands.mx/app/delivery-task/3607336217"
+    },
+    "SAL-ORD-26110703c18cd4|121033": {
+      "data": "2026-11-11T08:37:08-03:00",
+      "sales_order": "SAL-ORD-26110703c18cd4",
+      "nf": "121033",
+      "carrier": "Rodonaves",
+      "status_transportadora": "ENTREGA FINALIZADA",
+      "master_guide": "35261142418313000104550010001210331224380968",
+      "arrangement": "RODONAVES - 2026-11-09 08:14:45",
+      "itens": 3,
+      "task": "https://zecore.zebrands.mx/app/delivery-task/2d15bc8f7b"
+    },
+    "SAL-ORD-261108ab86d8df|121079": {
+      "data": "2026-11-11T08:37:53-03:00",
+      "sales_order": "SAL-ORD-261108ab86d8df",
+      "nf": "121079",
+      "carrier": "Rodonaves",
+      "status_transportadora": "ENTREGA FINALIZADA",
+      "master_guide": "35261142418313000104550010001210791224491211",
+      "arrangement": "RODONAVES - 2026-11-09 08:14:45",
+      "itens": 1,
+      "task": "https://zecore.zebrands.mx/app/delivery-task/d588defcb2"
+    },
+    "SAL-ORD-26110859798253|121082": {
+      "data": "2026-11-11T08:38:38-03:00",
+      "sales_order": "SAL-ORD-26110859798253",
+      "nf": "121082",
+      "carrier": "Rodonaves",
+      "status_transportadora": "ENTREGA FINALIZADA",
+      "master_guide": "35261142418313000104550010001210821224493805",
+      "arrangement": "RODONAVES - 2026-11-09 08:14:45",
+      "itens": 1,
+      "task": "https://zecore.zebrands.mx/app/delivery-task/1c069a4eda"
+    },
+    "SAL-ORD-261109dc315409|121102": {
+      "data": "2026-11-11T08:39:21-03:00",
+      "sales_order": "SAL-ORD-261109dc315409",
+      "nf": "121102",
+      "carrier": "Rodonaves",
+      "status_transportadora": "ENTREGA FINALIZADA",
+      "master_guide": "35261142418313000104550010001211021224534298",
+      "arrangement": "RODONAVES - 2026-11-09 08:14:45",
+      "itens": 1,
+      "task": "https://zecore.zebrands.mx/app/delivery-task/e4296cfa47"
+    },
+    "SAL-ORD-26110232ccd260|121121": {
+      "data": "2026-11-11T08:40:04-03:00",
+      "sales_order": "SAL-ORD-26110232ccd260",
+      "nf": "121121",
+      "carrier": "Rodonaves",
+      "status_transportadora": "ENTREGA FINALIZADA",
+      "master_guide": "35261142418313000104550010001211211224579084",
+      "arrangement": "RODONAVES - 2026-11-09 08:14:45",
+      "itens": 2,
+      "task": "https://zecore.zebrands.mx/app/delivery-task/34ed64a087"
+    },
+    "SAL-ORD-26110253ddabf1|121123": {
+      "data": "2026-11-11T08:40:40-03:00",
+      "sales_order": "SAL-ORD-26110253ddabf1",
+      "nf": "121123",
+      "carrier": "Rodonaves",
+      "status_transportadora": "ENTREGA FINALIZADA",
+      "master_guide": "35261142418313000104550010001211231224580010",
+      "arrangement": "RODONAVES - 2026-11-09 08:14:45",
+      "itens": 1,
+      "task": "https://zecore.zebrands.mx/app/delivery-task/468c79dc46"
+    },
+    "SAL-ORD-2611022afb1b60|120507": {
+      "data": "2026-11-11T08:41:16-03:00",
+      "sales_order": "SAL-ORD-2611022afb1b60",
+      "nf": "120507",
+      "carrier": "Rodonaves",
+      "status_transportadora": "ENTREGA FINALIZADA",
+      "master_guide": "35261142418313000104550010001205071878162245",
+      "arrangement": "RODONAVES - 2026-11-05 08:22:15",
+      "itens": 1,
+      "task": "https://zecore.zebrands.mx/app/delivery-task/cc9433c83f"
+    },
+    "SAL-ORD-261104daa9153e|120512": {
+      "data": "2026-11-11T08:41:52-03:00",
+      "sales_order": "SAL-ORD-261104daa9153e",
+      "nf": "120512",
+      "carrier": "Rodonaves",
+      "status_transportadora": "ENTREGA FINALIZADA",
+      "master_guide": "35261142418313000104550010001205121878191229",
+      "arrangement": "RODONAVES - 2026-11-05 08:22:15",
+      "itens": 1,
+      "task": "https://zecore.zebrands.mx/app/delivery-task/beefdeebea"
+    },
+    "SAL-ORD-261108eb1769eb|121035": {
+      "data": "2026-11-11T08:42:29-03:00",
+      "sales_order": "SAL-ORD-261108eb1769eb",
+      "nf": "121035",
+      "carrier": "Rodonaves",
+      "status_transportadora": "ENTREGA FINALIZADA",
+      "master_guide": "35261142418313000104550010001210351224385298",
+      "arrangement": "RODONAVES - 2026-11-09 08:14:45",
+      "itens": 1,
+      "task": "https://zecore.zebrands.mx/app/delivery-task/7e7981ebe8"
+    },
+    "SAL-ORD-26110761baa895|121008": {
+      "data": "2026-11-11T08:43:05-03:00",
+      "sales_order": "SAL-ORD-26110761baa895",
+      "nf": "121008",
+      "carrier": "Rodonaves",
+      "status_transportadora": "ENTREGA FINALIZADA",
+      "master_guide": "35261142418313000104550010001210081224315888",
+      "arrangement": "RODONAVES - 2026-11-09 08:14:45",
+      "itens": 1,
+      "task": "https://zecore.zebrands.mx/app/delivery-task/22589f791c"
+    },
+    "SAL-ORD-26110422676fe5|120506": {
+      "data": "2026-11-11T08:43:42-03:00",
+      "sales_order": "SAL-ORD-26110422676fe5",
+      "nf": "120506",
+      "carrier": "Rodonaves",
+      "status_transportadora": "ENTREGA FINALIZADA",
+      "master_guide": "35261142418313000104550010001205061878156248",
+      "arrangement": "RODONAVES - 2026-11-05 08:22:15",
+      "itens": 2,
+      "task": "https://zecore.zebrands.mx/app/delivery-task/bd851fba9c"
     }
   },
-  "atualizado_em": "2026-11-11T08:01:16-03:00",
+  "atualizado_em": "2026-11-11T08:43:42-03:00",
   "problemas": {
     "SAL-ORD-2610314b8f1999|119829": {
       "vezes": 1,
@@ -6252,6 +6626,12 @@
       "ultima": "2026-11-06T08:41:51-03:00",
       "motivo": "Confirmei o Submit mas não consegui verificar que foi aceito. Confira o documento antes de rodar de novo — veja debug/",
       "avisado_em": "2026-11-06T08:41:51-03:00"
+    },
+    "SAL-ORD-2611031cff4f22|120522": {
+      "vezes": 1,
+      "ultima": "2026-11-11T08:21:51-03:00",
+      "motivo": "Confirmei o Submit mas não consegui verificar que foi aceito. Confira o documento antes de rodar de novo — veja debug/",
+      "avisado_em": "2026-11-11T08:21:51-03:00"
     }
   }
 }
