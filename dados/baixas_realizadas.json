@@ -7097,9 +7097,42 @@
       "nf": "119414",
       "carrier": "Mira",
       "origem": "ja_tinha_baixa"
+    },
+    "SAL-ORD-261109117d85d5|121474": {
+      "data": "2026-11-11T16:21:48-03:00",
+      "sales_order": "SAL-ORD-261109117d85d5",
+      "nf": "121474",
+      "carrier": "Rodonaves",
+      "status_transportadora": "ENTREGA FINALIZADA",
+      "master_guide": "35261142418313000104550010001214741246753877",
+      "arrangement": "RODONAVES - 2026-11-10 14:34:25",
+      "itens": 1,
+      "task": "https://zecore.zebrands.mx/app/delivery-task/603c9da6db"
+    },
+    "SAL-ORD-261105c2051e88|120732": {
+      "data": "2026-11-11T16:22:38-03:00",
+      "sales_order": "SAL-ORD-261105c2051e88",
+      "nf": "120732",
+      "carrier": "Rodonaves",
+      "status_transportadora": "ENTREGA FINALIZADA",
+      "master_guide": "35261142418313000104550010001207321963556426",
+      "arrangement": "RODONAVES - 2026-11-06 08:04:30",
+      "itens": 1,
+      "task": "https://zecore.zebrands.mx/app/delivery-task/b5c81f9c9c"
+    },
+    "SAL-ORD-261108ec8c1ffe|121092": {
+      "data": "2026-11-11T16:23:22-03:00",
+      "sales_order": "SAL-ORD-261108ec8c1ffe",
+      "nf": "121092",
+      "carrier": "Rodonaves",
+      "status_transportadora": "ENTREGA FINALIZADA",
+      "master_guide": "35261142418313000104550010001210921224508329",
+      "arrangement": "RODONAVES - 2026-11-09 08:14:45",
+      "itens": 1,
+      "task": "https://zecore.zebrands.mx/app/delivery-task/3f5578f539"
     }
   },
-  "atualizado_em": "2026-11-11T16:02:26-03:00",
+  "atualizado_em": "2026-11-11T16:23:22-03:00",
   "problemas": {
     "SAL-ORD-2610258ac86b05|119183": {
       "vezes": 1,
