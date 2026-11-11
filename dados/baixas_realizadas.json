@@ -6230,9 +6230,16 @@
       "arrangement": "Mira Transportes - 2026-10-20 08:04:34",
       "itens": 1,
       "task": "https://zecore.zebrands.mx/app/delivery-task/02370638da"
+    },
+    "SAL-ORD-2611047a5657bd|120471": {
+      "data": "2026-11-11T07:01:36-03:00",
+      "sales_order": "SAL-ORD-2611047a5657bd",
+      "nf": "120471",
+      "carrier": "Rodonaves",
+      "origem": "ja_tinha_baixa"
     }
   },
-  "atualizado_em": "2026-11-10T23:41:13-03:00",
+  "atualizado_em": "2026-11-11T07:01:36-03:00",
   "problemas": {
     "SAL-ORD-2610314b8f1999|119829": {
       "vezes": 1,
@@ -6245,12 +6252,6 @@
       "ultima": "2026-11-06T08:41:51-03:00",
       "motivo": "Confirmei o Submit mas não consegui verificar que foi aceito. Confira o documento antes de rodar de novo — veja debug/",
       "avisado_em": "2026-11-06T08:41:51-03:00"
-    },
-    "SAL-ORD-2611047a5657bd|120471": {
-      "vezes": 2,
-      "ultima": "2026-11-10T22:01:57-03:00",
-      "motivo": "Confirmei o Submit mas não consegui verificar que foi aceito. Confira o documento antes de rodar de novo — veja debug/",
-      "avisado_em": "2026-11-10T19:42:22-03:00"
     }
   }
 }
