@@ -7311,7 +7311,7 @@
       "task": "https://zecore.zebrands.mx/app/delivery-task/f4c6be88e7"
     }
   },
-  "atualizado_em": "2026-11-12T11:25:47-03:00",
+  "atualizado_em": "2026-11-12T13:42:14-03:00",
   "problemas": {
     "SAL-ORD-2610258ac86b05|119183": {
       "vezes": 1,
@@ -7338,9 +7338,9 @@
       "avisado_em": "2026-11-11T14:09:54-03:00"
     },
     "SAL-ORD-2611042b36febf|120488": {
-      "vezes": 1,
-      "ultima": "2026-11-12T11:22:03-03:00",
-      "motivo": "Confirmei o Submit mas não consegui verificar que foi aceito. Confira o documento antes de rodar de novo — veja debug/",
+      "vezes": 2,
+      "ultima": "2026-11-12T13:42:14-03:00",
+      "motivo": "Page.goto: Timeout 45000ms exceeded.\nCall log:\n  - navigating to \"https://zecore.zebrands.mx/app/shipping-core/Sales%20Order-SAL-ORD-2611042b36febf-shipping\", waiting until \"domcontentloaded\"\n",
       "avisado_em": "2026-11-12T11:22:03-03:00"
     }
   }
