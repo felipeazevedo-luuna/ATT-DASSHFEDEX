@@ -7238,7 +7238,7 @@
       "task": "https://zecore.zebrands.mx/app/delivery-task/c085738973"
     }
   },
-  "atualizado_em": "2026-11-11T19:04:58-03:00",
+  "atualizado_em": "2026-11-11T21:22:10-03:00",
   "problemas": {
     "SAL-ORD-2610258ac86b05|119183": {
       "vezes": 1,
@@ -7265,9 +7265,9 @@
       "avisado_em": "2026-11-11T14:09:54-03:00"
     },
     "SAL-ORD-2611057c9076b0|120583": {
-      "vezes": 1,
-      "ultima": "2026-11-11T19:04:58-03:00",
-      "motivo": "Locator.wait_for: Timeout 45000ms exceeded.\nCall log:\n  - waiting for locator(\"button[data-toggle='dropdown']:has-text('Create')\").first to be visible\n",
+      "vezes": 2,
+      "ultima": "2026-11-11T21:22:10-03:00",
+      "motivo": "Confirmei o Submit mas não consegui verificar que foi aceito. Confira o documento antes de rodar de novo — veja debug/",
       "avisado_em": "2026-11-11T19:04:58-03:00"
     }
   }
