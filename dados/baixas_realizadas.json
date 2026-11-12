@@ -7642,9 +7642,20 @@
       "nf": "120725",
       "carrier": "Rodonaves",
       "origem": "ja_tinha_baixa"
+    },
+    "FREE-SAL-ORD-261104824933fb|120503": {
+      "data": "2026-11-12T17:41:36-03:00",
+      "sales_order": "FREE-SAL-ORD-261104824933fb",
+      "nf": "120503",
+      "carrier": "Rodonaves",
+      "status_transportadora": "ENTREGA FINALIZADA",
+      "master_guide": "35261142418313000104550010001205031878143535",
+      "arrangement": "RODONAVES - 2026-11-05 08:22:15",
+      "itens": 4,
+      "task": "https://zecore.zebrands.mx/app/delivery-task/c6de4a5c00"
     }
   },
-  "atualizado_em": "2026-11-12T17:21:22-03:00",
+  "atualizado_em": "2026-11-12T17:41:37-03:00",
   "problemas": {
     "SAL-ORD-2610258ac86b05|119183": {
       "vezes": 1,
