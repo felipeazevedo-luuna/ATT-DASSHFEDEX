@@ -509,7 +509,16 @@ def fazer_login(page, usuario, senha):
 
     page.keyboard.press("Enter")
     page.wait_for_url("**/app**", timeout=TIMEOUT_MS)
-    page.wait_for_load_state("networkidle", timeout=TIMEOUT_MS)
+    # O wait_for_url acima já confirma que o login passou. O networkidle abaixo
+    # era só um respiro pra tela montar, mas ele exige 500ms sem NENHUMA
+    # requisição de rede: em tela com polling isso às vezes nunca acontece e
+    # derrubava o robô já logado. Era a causa da maioria das falhas deste
+    # workflow. Mesmo tratamento que abrir_pedido() e as outras esperas deste
+    # arquivo já usam.
+    try:
+        page.wait_for_load_state("networkidle", timeout=20_000)
+    except PWTimeout:
+        log("A tela seguiu carregando em segundo plano; login ok, seguindo")
     log("Login concluído")
 
 
