@@ -7841,9 +7841,20 @@
       "nf": "121847",
       "carrier": "Rodonaves",
       "origem": "ja_tinha_baixa"
+    },
+    "SAL-ORD-261102ebedbab1|119946": {
+      "data": "2026-11-13T13:02:30-03:00",
+      "sales_order": "SAL-ORD-261102ebedbab1",
+      "nf": "119946",
+      "carrier": "Mira",
+      "status_transportadora": "MERCADORIA ENTREGUE",
+      "master_guide": "35261142418313000104550010001199461705185135",
+      "arrangement": "Mira Transportes - 2026-11-03 08:12:24",
+      "itens": 2,
+      "task": "https://zecore.zebrands.mx/app/delivery-task/4edc1600d3"
     }
   },
-  "atualizado_em": "2026-11-13T11:21:05-03:00",
+  "atualizado_em": "2026-11-13T13:02:30-03:00",
   "problemas": {
     "SAL-ORD-261021bea17a48|119415": {
       "vezes": 1,
