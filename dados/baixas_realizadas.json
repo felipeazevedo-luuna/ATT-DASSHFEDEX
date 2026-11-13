@@ -8083,9 +8083,20 @@
       "arrangement": "RODONAVES - 2026-11-10 14:34:25",
       "itens": 3,
       "task": "https://zecore.zebrands.mx/app/delivery-task/73505b8532"
+    },
+    "SAL-ORD-2610311c690b1e|119941": {
+      "data": "2026-11-13T15:41:50-03:00",
+      "sales_order": "SAL-ORD-2610311c690b1e",
+      "nf": "119941",
+      "carrier": "Mira",
+      "status_transportadora": "MERCADORIA ENTREGUE",
+      "master_guide": "35261142418313000104550010001199411705175583",
+      "arrangement": "Mira Transportes - 2026-11-03 08:12:24",
+      "itens": 1,
+      "task": "https://zecore.zebrands.mx/app/delivery-task/1cc940e322"
     }
   },
-  "atualizado_em": "2026-11-13T15:03:15-03:00",
+  "atualizado_em": "2026-11-13T15:41:51-03:00",
   "problemas": {
     "SAL-ORD-261021bea17a48|119415": {
       "vezes": 1,
