@@ -8478,9 +8478,38 @@
       "arrangement": "RODONAVES - 2026-11-11 08:09:09",
       "itens": 2,
       "task": "https://zecore.zebrands.mx/app/delivery-task/e392fb0149"
+    },
+    "SAL-ORD-26110480d843ba|120693": {
+      "data": "2026-11-14T12:41:31-03:00",
+      "sales_order": "SAL-ORD-26110480d843ba",
+      "nf": "120693",
+      "carrier": "Rodonaves",
+      "status_transportadora": "ENTREGA FINALIZADA",
+      "master_guide": "35261142418313000104550010001206931889145308",
+      "arrangement": "RODONAVES - 2026-11-05 11:26:57",
+      "itens": 1,
+      "task": "https://zecore.zebrands.mx/app/delivery-task/a4d2032ea0"
+    },
+    "SAL-ORD-261111ecdf4fbf|122145": {
+      "data": "2026-11-14T12:42:08-03:00",
+      "sales_order": "SAL-ORD-261111ecdf4fbf",
+      "nf": "122145",
+      "carrier": "Rodonaves",
+      "status_transportadora": "ENTREGA FINALIZADA",
+      "master_guide": "35261142418313000104550010001221451418937420",
+      "arrangement": "RODONAVES - 2026-11-13 14:32:14",
+      "itens": 2,
+      "task": "https://zecore.zebrands.mx/app/delivery-task/7d54415c88"
+    },
+    "SAL-ORD-261106cfc8b2d0|121127": {
+      "data": "2026-11-14T12:42:13-03:00",
+      "sales_order": "SAL-ORD-261106cfc8b2d0",
+      "nf": "121127",
+      "carrier": "Rodonaves",
+      "origem": "ja_tinha_baixa"
     }
   },
-  "atualizado_em": "2026-11-14T10:22:06-03:00",
+  "atualizado_em": "2026-11-14T12:42:13-03:00",
   "problemas": {
     "SAL-ORD-261021bea17a48|119415": {
       "vezes": 1,
@@ -8553,12 +8582,6 @@
       "ultima": "2026-11-13T14:12:13-03:00",
       "motivo": "Confirmei o Submit mas não consegui verificar que foi aceito. Confira o documento antes de rodar de novo — veja debug/",
       "avisado_em": "2026-11-13T14:12:13-03:00"
-    },
-    "SAL-ORD-261106cfc8b2d0|121127": {
-      "vezes": 1,
-      "ultima": "2026-11-14T10:22:06-03:00",
-      "motivo": "Confirmei o Submit mas não consegui verificar que foi aceito. Confira o documento antes de rodar de novo — veja debug/",
-      "avisado_em": "2026-11-14T10:22:06-03:00"
     }
   }
 }
