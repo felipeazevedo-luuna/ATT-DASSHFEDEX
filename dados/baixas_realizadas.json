@@ -8788,9 +8788,53 @@
       "nf": "122613",
       "carrier": "Rodonaves",
       "origem": "ja_tinha_baixa"
+    },
+    "SAL-ORD-261110c4d76e6b|121894": {
+      "data": "2026-11-16T15:02:06-03:00",
+      "sales_order": "SAL-ORD-261110c4d76e6b",
+      "nf": "121894",
+      "carrier": "Rodonaves",
+      "status_transportadora": "ENTREGA FINALIZADA",
+      "master_guide": "35261142418313000104550010001218941396862170",
+      "arrangement": "RODONAVES - 2026-11-11 08:09:09",
+      "itens": 1,
+      "task": "https://zecore.zebrands.mx/app/delivery-task/364fafc561"
+    },
+    "SAL-ORD-26111159b4842a|122152": {
+      "data": "2026-11-16T15:02:42-03:00",
+      "sales_order": "SAL-ORD-26111159b4842a",
+      "nf": "122152",
+      "carrier": "Rodonaves",
+      "status_transportadora": "ENTREGA FINALIZADA",
+      "master_guide": "35261142418313000104550010001221521418959053",
+      "arrangement": "RODONAVES - 2026-11-13 14:32:14",
+      "itens": 1,
+      "task": "https://zecore.zebrands.mx/app/delivery-task/214d9262a8"
+    },
+    "SAL-ORD-261109906cb274|122380": {
+      "data": "2026-11-16T15:03:18-03:00",
+      "sales_order": "SAL-ORD-261109906cb274",
+      "nf": "122380",
+      "carrier": "Rodonaves",
+      "status_transportadora": "ENTREGA FINALIZADA",
+      "master_guide": "35261142418313000104550010001223801484578068",
+      "arrangement": "RODONAVES - 2026-11-13 08:37:21",
+      "itens": 3,
+      "task": "https://zecore.zebrands.mx/app/delivery-task/e8c9509e04"
+    },
+    "SAL-ORD-26111190f78ec7|122400": {
+      "data": "2026-11-16T15:04:06-03:00",
+      "sales_order": "SAL-ORD-26111190f78ec7",
+      "nf": "122400",
+      "carrier": "Rodonaves",
+      "status_transportadora": "ENTREGA FINALIZADA",
+      "master_guide": "35261142418313000104550010001224001484594807",
+      "arrangement": "RODONAVES - 2026-11-13 08:37:21",
+      "itens": 1,
+      "task": "https://zecore.zebrands.mx/app/delivery-task/156eab6bf4"
     }
   },
-  "atualizado_em": "2026-11-16T14:26:15-03:00",
+  "atualizado_em": "2026-11-16T15:04:06-03:00",
   "problemas": {
     "SAL-ORD-261021bea17a48|119415": {
       "vezes": 1,
