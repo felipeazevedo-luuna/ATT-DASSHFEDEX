@@ -9077,9 +9077,16 @@
       "nf": "122386",
       "carrier": "Rodonaves",
       "origem": "ja_tinha_baixa"
+    },
+    "SAL-ORD-261112770812fc|122379": {
+      "data": "2026-11-16T19:21:26-03:00",
+      "sales_order": "SAL-ORD-261112770812fc",
+      "nf": "122379",
+      "carrier": "Rodonaves",
+      "origem": "ja_tinha_baixa"
     }
   },
-  "atualizado_em": "2026-11-16T19:03:11-03:00",
+  "atualizado_em": "2026-11-16T19:21:26-03:00",
   "problemas": {
     "SAL-ORD-261021bea17a48|119415": {
       "vezes": 1,
@@ -9152,12 +9159,6 @@
       "ultima": "2026-11-13T14:12:13-03:00",
       "motivo": "Confirmei o Submit mas não consegui verificar que foi aceito. Confira o documento antes de rodar de novo — veja debug/",
       "avisado_em": "2026-11-13T14:12:13-03:00"
-    },
-    "SAL-ORD-261112770812fc|122379": {
-      "vezes": 1,
-      "ultima": "2026-11-16T17:02:42-03:00",
-      "motivo": "Depois de salvar o botão não virou Submit — veja debug/",
-      "avisado_em": "2026-11-16T17:02:42-03:00"
     },
     "SAL-ORD-26111133275b4d|122155": {
       "vezes": 1,
