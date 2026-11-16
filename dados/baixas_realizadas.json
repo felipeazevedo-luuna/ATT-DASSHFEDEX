@@ -8523,7 +8523,7 @@
       "origem": "ja_tinha_baixa"
     }
   },
-  "atualizado_em": "2026-11-15T07:01:23-03:00",
+  "atualizado_em": "2026-11-16T08:22:11-03:00",
   "problemas": {
     "SAL-ORD-261021bea17a48|119415": {
       "vezes": 1,
@@ -8596,6 +8596,12 @@
       "ultima": "2026-11-13T14:12:13-03:00",
       "motivo": "Confirmei o Submit mas não consegui verificar que foi aceito. Confira o documento antes de rodar de novo — veja debug/",
       "avisado_em": "2026-11-13T14:12:13-03:00"
+    },
+    "SAL-ORD-261111cacbee7c|122248": {
+      "vezes": 1,
+      "ultima": "2026-11-16T08:22:11-03:00",
+      "motivo": "Confirmei o Submit mas não consegui verificar que foi aceito. Confira o documento antes de rodar de novo — veja debug/",
+      "avisado_em": "2026-11-16T08:22:11-03:00"
     }
   }
 }
