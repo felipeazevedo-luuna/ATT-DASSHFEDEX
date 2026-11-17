@@ -9559,7 +9559,7 @@
       "task": "https://zecore.zebrands.mx/app/delivery-task/8a46539533"
     }
   },
-  "atualizado_em": "2026-11-17T18:26:54-03:00",
+  "atualizado_em": "2026-11-17T19:05:57-03:00",
   "problemas": {
     "SAL-ORD-261021bea17a48|119415": {
       "vezes": 1,
@@ -9644,6 +9644,42 @@
       "ultima": "2026-11-17T18:26:54-03:00",
       "motivo": "Depois de salvar o botão não virou Submit — veja debug/",
       "avisado_em": "2026-11-17T18:26:54-03:00"
+    },
+    "SAL-ORD-261111236551bf|121853": {
+      "vezes": 1,
+      "ultima": "2026-11-17T19:03:06-03:00",
+      "motivo": "Confirmei o Submit mas não consegui verificar que foi aceito. Confira o documento antes de rodar de novo — veja debug/",
+      "avisado_em": "2026-11-17T19:03:06-03:00"
+    },
+    "SAL-ORD-261111ab684d1f|121889": {
+      "vezes": 1,
+      "ultima": "2026-11-17T19:03:32-03:00",
+      "motivo": "Depois de salvar o botão não virou Submit — veja debug/",
+      "avisado_em": "2026-11-17T19:03:32-03:00"
+    },
+    "SAL-ORD-261107d8f502eb|120907": {
+      "vezes": 1,
+      "ultima": "2026-11-17T19:03:58-03:00",
+      "motivo": "Depois de salvar o botão não virou Submit — veja debug/",
+      "avisado_em": "2026-11-17T19:03:58-03:00"
+    },
+    "SAL-ORD-261115812057a6|123065": {
+      "vezes": 1,
+      "ultima": "2026-11-17T19:04:26-03:00",
+      "motivo": "Depois de salvar o botão não virou Submit — veja debug/",
+      "avisado_em": "2026-11-17T19:04:26-03:00"
+    },
+    "SAL-ORD-26110906393b3f|121490": {
+      "vezes": 1,
+      "ultima": "2026-11-17T19:05:21-03:00",
+      "motivo": "Confirmei o Submit mas não consegui verificar que foi aceito. Confira o documento antes de rodar de novo — veja debug/",
+      "avisado_em": "2026-11-17T19:05:21-03:00"
+    },
+    "SAL-ORD-261012c0353f0a|117243": {
+      "vezes": 1,
+      "ultima": "2026-11-17T19:05:57-03:00",
+      "motivo": "Locator.click: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator(\".grid-row[data-idx]\").first.locator(\".btn-open-row\").first\n    - locator resolved to <div class=\"btn-open-row\">…</div>\n  - a",
+      "avisado_em": "2026-11-17T19:05:57-03:00"
     }
   }
 }
