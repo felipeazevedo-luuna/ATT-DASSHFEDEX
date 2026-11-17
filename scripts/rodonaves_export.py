@@ -335,7 +335,9 @@ def exportar(page, nome):
     arq = DIR_SAIDA / nome
     botao = page.locator("button:has-text('Exportar planilha')").first
     downloads = []
-    ao_baixar = downloads.append
+    def ao_baixar(download):
+        downloads.append(download)
+
     page.on("download", ao_baixar)
     try:
         with page.expect_response(
