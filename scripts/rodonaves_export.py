@@ -51,6 +51,7 @@ DIAS_PADRAO = 30            # o que a tela de Frete mostra por padrão
 INICIO_RODONAVES = date(2026, 10, 27)
 TIMEOUT_MS = 60_000
 TIMEOUT_DOWNLOAD_MS = 120_000
+TIMEOUT_JOB_S = 600          # exportação assíncrona do portal (202 + export-job)
 
 DIR_SAIDA = Path("saida")
 DIR_DEBUG = Path("debug")
@@ -291,14 +292,71 @@ def buscar(page):
     return _primeiro_visivel(page, ["button:has-text('Exportar planilha')"], timeout=1000) is not None
 
 
+def _baixar_job_exportacao(page, resp_export, arq):
+    """Exportação assíncrona do portal (desde 16/11/2026, com muitos CT-e).
+
+    O GET .../orders/export responde 202 com {"data": {"jobId": ...}} e a tela só
+    avisa "você será avisado pelo sino de notificações". O arquivo fica pronto em
+    GET .../export-jobs/{jobId}/download -> data.status (2 = pronto, 3 = erro) e
+    data.downloadUrl — o mesmo caminho que o clique na notificação usa.
+    """
+    job = (resp_export.json().get("data") or {}).get("jobId")
+    if not job:
+        raise RuntimeError(f"Exportação respondeu 202 sem jobId: {resp_export.text()[:200]}")
+    base_api = resp_export.url.split("/orders/export")[0]
+    auth = {k: v for k, v in resp_export.request.all_headers().items()
+            if k.lower() == "authorization"}
+    log(f"Exportação em processamento no portal (job {job}) — aguardando o arquivo")
+    limite = time.time() + TIMEOUT_JOB_S
+    while time.time() < limite:
+        r = page.request.get(f"{base_api}/export-jobs/{job}/download", headers=auth, timeout=TIMEOUT_MS)
+        dados = ((r.json() or {}).get("data") or {}) if r.ok else {}
+        status, url = dados.get("status"), dados.get("downloadUrl")
+        if status == 3:
+            raise RuntimeError("O portal não conseguiu gerar a planilha (export-job com erro)")
+        if status == 2 and url:
+            arquivo = page.request.get(url, timeout=TIMEOUT_DOWNLOAD_MS)
+            if not arquivo.ok:   # link do próprio portal pode exigir o token
+                arquivo = page.request.get(url, headers=auth, timeout=TIMEOUT_DOWNLOAD_MS)
+            if not arquivo.ok:
+                raise RuntimeError(f"Download do arquivo pronto falhou: HTTP {arquivo.status}")
+            corpo = arquivo.body()
+            if not corpo.startswith(b"PK"):   # xlsx é um zip
+                raise RuntimeError(f"Arquivo do job não é xlsx (início: {corpo[:40]!r})")
+            arq.write_bytes(corpo)
+            log(f"Arquivo do job baixado ({len(corpo) // 1024} KB)")
+            return arq
+        page.wait_for_timeout(5_000)
+    raise PWTimeout(f"Export-job {job} não ficou pronto em {TIMEOUT_JOB_S // 60} min")
+
+
 def exportar(page, nome):
     DIR_SAIDA.mkdir(exist_ok=True)
-    botao = page.locator("button:has-text('Exportar planilha')").first
-    with page.expect_download(timeout=TIMEOUT_DOWNLOAD_MS) as dl:
-        botao.click()
     arq = DIR_SAIDA / nome
-    dl.value.save_as(str(arq))
-    return arq
+    botao = page.locator("button:has-text('Exportar planilha')").first
+    downloads = []
+    ao_baixar = downloads.append
+    page.on("download", ao_baixar)
+    try:
+        with page.expect_response(
+                lambda r: "/orders/export" in r.url and r.request.method == "GET",
+                timeout=TIMEOUT_DOWNLOAD_MS) as info:
+            botao.click()
+        resp = info.value
+        if resp.status == 202:
+            return _baixar_job_exportacao(page, resp, arq)
+        if not resp.ok:
+            raise RuntimeError(f"Exportar planilha respondeu HTTP {resp.status}: {resp.text()[:200]}")
+        # Resultado pequeno: o arquivo vem na hora e a tela dispara o download
+        limite = time.time() + 60
+        while not downloads and time.time() < limite:
+            page.wait_for_timeout(500)
+        if not downloads:
+            raise PWTimeout("O portal respondeu à exportação, mas o download não começou")
+        downloads[0].save_as(str(arq))
+        return arq
+    finally:
+        page.remove_listener("download", ao_baixar)
 
 
 def ler_xlsx(caminho):
