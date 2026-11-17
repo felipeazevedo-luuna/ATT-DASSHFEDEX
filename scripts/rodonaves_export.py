@@ -292,42 +292,60 @@ def buscar(page):
     return _primeiro_visivel(page, ["button:has-text('Exportar planilha')"], timeout=1000) is not None
 
 
-def _baixar_job_exportacao(page, resp_export, arq):
+def _baixar_pelo_sino(page, arq):
     """Exportação assíncrona do portal (desde 16/11/2026, com muitos CT-e).
 
-    O GET .../orders/export responde 202 com {"data": {"jobId": ...}} e a tela só
-    avisa "você será avisado pelo sino de notificações". O arquivo fica pronto em
-    GET .../export-jobs/{jobId}/download -> data.status (2 = pronto, 3 = erro) e
-    data.downloadUrl — o mesmo caminho que o clique na notificação usa.
+    O GET .../orders/export responde 202 e a tela avisa "você será avisado pelo sino
+    de notificações". A resposta vem criptografada (o próprio site decifra), então
+    o robô faz o que uma pessoa faz: espera no sino o aviso "Gerando sua planilha
+    de frete…" virar "Exportação de frete concluída" e clica nele. O clique chama
+    window.open(downloadUrl) — capturado aqui para baixar o arquivo direto.
     """
-    job = (resp_export.json().get("data") or {}).get("jobId")
-    if not job:
-        raise RuntimeError(f"Exportação respondeu 202 sem jobId: {resp_export.text()[:200]}")
-    base_api = resp_export.url.split("/orders/export")[0]
-    auth = {k: v for k, v in resp_export.request.all_headers().items()
-            if k.lower() == "authorization"}
-    log(f"Exportação em processamento no portal (job {job}) — aguardando o arquivo")
+    sino = page.locator("button[aria-label='Notificações']").first
+    gerando = page.get_by_text(re.compile(r"Gerando sua planilha de frete", re.I)).first
+    pronta = page.get_by_text(re.compile(r"Exporta(ç|c)ão de frete conclu", re.I)).first
+    erro = page.get_by_text(re.compile(r"Erro ao exportar frete", re.I)).first
+    page.evaluate("""() => { window.__rteUrls = [];
+        window.open = (u) => { window.__rteUrls.push(String(u)); return null; }; }""")
+    log("Exportação em processamento no portal — aguardando o aviso no sino")
+
+    def menu_aberto(abrir):
+        aberto = gerando.is_visible() or pronta.is_visible() or erro.is_visible()
+        if abrir != aberto:
+            sino.click()
+            page.wait_for_timeout(1500)
+
+    viu_gerando = False
     limite = time.time() + TIMEOUT_JOB_S
     while time.time() < limite:
-        r = page.request.get(f"{base_api}/export-jobs/{job}/download", headers=auth, timeout=TIMEOUT_MS)
-        dados = ((r.json() or {}).get("data") or {}) if r.ok else {}
-        status, url = dados.get("status"), dados.get("downloadUrl")
-        if status == 3:
-            raise RuntimeError("O portal não conseguiu gerar a planilha (export-job com erro)")
-        if status == 2 and url:
-            arquivo = page.request.get(url, timeout=TIMEOUT_DOWNLOAD_MS)
-            if not arquivo.ok:   # link do próprio portal pode exigir o token
-                arquivo = page.request.get(url, headers=auth, timeout=TIMEOUT_DOWNLOAD_MS)
+        menu_aberto(True)
+        if gerando.is_visible():
+            viu_gerando = True
+        elif viu_gerando and erro.is_visible():
+            raise RuntimeError("O portal não conseguiu gerar a planilha (aviso de erro no sino)")
+        elif viu_gerando and pronta.is_visible():
+            pronta.click()                         # o 1º da lista é o desta exportação
+            for _ in range(30):
+                urls = page.evaluate("() => window.__rteUrls")
+                if urls:
+                    break
+                page.wait_for_timeout(1000)
+            else:
+                raise RuntimeError("Cliquei no aviso do sino, mas o portal não devolveu o link do arquivo")
+            arquivo = page.request.get(urls[-1], timeout=TIMEOUT_DOWNLOAD_MS)
             if not arquivo.ok:
                 raise RuntimeError(f"Download do arquivo pronto falhou: HTTP {arquivo.status}")
             corpo = arquivo.body()
-            if not corpo.startswith(b"PK"):   # xlsx é um zip
-                raise RuntimeError(f"Arquivo do job não é xlsx (início: {corpo[:40]!r})")
+            if not corpo.startswith(b"PK"):        # xlsx é um zip
+                raise RuntimeError(f"Arquivo baixado não é xlsx (início: {corpo[:40]!r})")
             arq.write_bytes(corpo)
-            log(f"Arquivo do job baixado ({len(corpo) // 1024} KB)")
+            log(f"Arquivo baixado pelo aviso do sino ({len(corpo) // 1024} KB)")
             return arq
+        menu_aberto(False)                         # fecha e reabre: a lista recarrega
         page.wait_for_timeout(5_000)
-    raise PWTimeout(f"Export-job {job} não ficou pronto em {TIMEOUT_JOB_S // 60} min")
+    salvar_debug(page, "sino")
+    raise PWTimeout(f"O aviso de planilha pronta não apareceu no sino em {TIMEOUT_JOB_S // 60} min"
+                    + ("" if viu_gerando else " (nem o aviso 'Gerando sua planilha' apareceu)"))
 
 
 def exportar(page, nome):
@@ -346,7 +364,7 @@ def exportar(page, nome):
             botao.click()
         resp = info.value
         if resp.status == 202:
-            return _baixar_job_exportacao(page, resp, arq)
+            return _baixar_pelo_sino(page, arq)
         if not resp.ok:
             raise RuntimeError(f"Exportar planilha respondeu HTTP {resp.status}: {resp.text()[:200]}")
         # Resultado pequeno: o arquivo vem na hora e a tela dispara o download
@@ -382,6 +400,14 @@ def baixar_periodo(page, inicio, fim):
     arq = exportar(page, f"rte_{inicio:%Y%m%d}_{fim:%Y%m%d}.xlsx")
     cab, dados = ler_xlsx(arq)
     log(f"{rotulo}: {len(dados)} CT-e(s)")
+    # O rodonavesConciliar (Apps Script da Dash_fedex) lê a aba pelos nomes do
+    # cabeçalho. Se o portal mudar o arquivo, não grava por cima: falha avisando.
+    nomes = {str(c).strip().lower() for c in cab}
+    faltando = [n for n in ("Valor NF", "Valor frete", "CT-e") if n.lower() not in nomes]
+    if not ({"chave de acesso nf-e", "documento vinculado"} & nomes):
+        faltando.append("Chave de acesso NF-e / Documento vinculado")
+    if faltando:
+        raise RuntimeError(f"Planilha do portal mudou: faltam as colunas {faltando}. Cabeçalho: {cab}")
     return cab, dados
 
 
