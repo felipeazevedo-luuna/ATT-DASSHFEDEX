@@ -292,45 +292,72 @@ def buscar(page):
     return _primeiro_visivel(page, ["button:has-text('Exportar planilha')"], timeout=1000) is not None
 
 
-def _baixar_pelo_sino(page, arq):
+_JS_AVISOS = r"""(desde) => {
+    // Avisos "Exportação de frete concluída" do sino, com o horário (AAAAMMDDHHMM)
+    const out = [];
+    document.querySelectorAll('button, a, li, [role="menuitem"]').forEach(el => {
+        const t = (el.innerText || '').trim();
+        if (!/^Exporta(ç|c)ão de frete conclu/i.test(t) && !/^Erro ao exportar frete/i.test(t)) return;
+        const m = t.match(/(\d{2})\/(\d{2})\/(\d{4}) (\d{2}):(\d{2})/);
+        if (!m) return;
+        const ts = m[3] + m[2] + m[1] + m[4] + m[5];
+        if (ts < desde) return;
+        el.dataset.rteAviso = ts;
+        out.push({ts, erro: /^Erro/i.test(t)});
+    });
+    return out.sort((a, b) => b.ts.localeCompare(a.ts));
+}"""
+
+
+_JS_SINO_ABERTO = """() => [...document.querySelectorAll('p, span, h2, h3, h4, div')].some(e =>
+    e.childElementCount === 0 && e.offsetParent !== null
+    && (e.innerText || '').trim().toUpperCase() === 'NOTIFICAÇÕES')"""
+_JS_CLICAR_SINO = """() => { const b = document.querySelector("button[aria-label='Notificações']");
+    if (b) b.click(); }"""
+
+
+def _recarregar_sino(page):
+    """Deixa o painel do sino aberto com a lista recarregada (fecha e abre se já estava aberto).
+    Cliques via JS: o painel aberto e os avisos ficam por cima do botão."""
+    if page.evaluate(_JS_SINO_ABERTO):
+        page.evaluate(_JS_CLICAR_SINO)
+        page.wait_for_timeout(800)
+    page.evaluate(_JS_CLICAR_SINO)
+    page.wait_for_timeout(1500)
+
+
+def _baixar_pelo_sino(page, arq, desde):
     """Exportação assíncrona do portal (desde 16/11/2026, com muitos CT-e).
 
     O GET .../orders/export responde 202 e a tela avisa "você será avisado pelo sino
-    de notificações". A resposta vem criptografada (o próprio site decifra), então
-    o robô faz o que uma pessoa faz: espera no sino o aviso "Gerando sua planilha
-    de frete…" virar "Exportação de frete concluída" e clica nele. O clique chama
-    window.open(downloadUrl) — capturado aqui para baixar o arquivo direto.
+    de notificações". A resposta vem criptografada (o próprio site decifra), então o
+    robô faz o que uma pessoa faz: abre o sino, espera o aviso "Exportação de frete
+    concluída" com horário >= o do clique em Exportar (o sino guarda os avisos das
+    exportações anteriores) e clica nele. O clique chama window.open(downloadUrl),
+    capturado aqui para baixar o arquivo direto.
     """
-    sino = page.locator("button[aria-label='Notificações']").first
-    gerando = page.get_by_text(re.compile(r"Gerando sua planilha de frete", re.I)).first
-    pronta = page.get_by_text(re.compile(r"Exporta(ç|c)ão de frete conclu", re.I)).first
-    erro = page.get_by_text(re.compile(r"Erro ao exportar frete", re.I)).first
     page.evaluate("""() => { window.__rteUrls = [];
         window.open = (u) => { window.__rteUrls.push(String(u)); return null; }; }""")
     log("Exportação em processamento no portal — aguardando o aviso no sino")
-
-    def menu_aberto(abrir):
-        aberto = gerando.is_visible() or pronta.is_visible() or erro.is_visible()
-        if abrir != aberto:
-            sino.click()
-            page.wait_for_timeout(1500)
-
-    viu_gerando = False
     limite = time.time() + TIMEOUT_JOB_S
+    proxima_reabertura = 0
     while time.time() < limite:
-        menu_aberto(True)
-        if gerando.is_visible():
-            viu_gerando = True
-        elif viu_gerando and erro.is_visible():
-            raise RuntimeError("O portal não conseguiu gerar a planilha (aviso de erro no sino)")
-        elif viu_gerando and pronta.is_visible():
-            pronta.click()                         # o 1º da lista é o desta exportação
+        if time.time() >= proxima_reabertura:      # reabrir recarrega a lista do sino
+            _recarregar_sino(page)
+            proxima_reabertura = time.time() + 30
+        avisos = page.evaluate(_JS_AVISOS, desde)
+        if avisos:
+            aviso = avisos[0]
+            if aviso["erro"]:
+                raise RuntimeError("O portal não conseguiu gerar a planilha (aviso de erro no sino)")
+            page.evaluate("""(ts) => document.querySelector(`[data-rte-aviso="${ts}"]`).click()""", aviso["ts"])
             for _ in range(30):
                 urls = page.evaluate("() => window.__rteUrls")
                 if urls:
                     break
                 page.wait_for_timeout(1000)
             else:
+                salvar_debug(page, "sino")
                 raise RuntimeError("Cliquei no aviso do sino, mas o portal não devolveu o link do arquivo")
             arquivo = page.request.get(urls[-1], timeout=TIMEOUT_DOWNLOAD_MS)
             if not arquivo.ok:
@@ -339,13 +366,12 @@ def _baixar_pelo_sino(page, arq):
             if not corpo.startswith(b"PK"):        # xlsx é um zip
                 raise RuntimeError(f"Arquivo baixado não é xlsx (início: {corpo[:40]!r})")
             arq.write_bytes(corpo)
-            log(f"Arquivo baixado pelo aviso do sino ({len(corpo) // 1024} KB)")
+            log(f"Arquivo baixado pelo aviso do sino de {aviso['ts'][8:10]}:{aviso['ts'][10:]} "
+                f"({len(corpo) // 1024} KB)")
             return arq
-        menu_aberto(False)                         # fecha e reabre: a lista recarrega
         page.wait_for_timeout(5_000)
     salvar_debug(page, "sino")
-    raise PWTimeout(f"O aviso de planilha pronta não apareceu no sino em {TIMEOUT_JOB_S // 60} min"
-                    + ("" if viu_gerando else " (nem o aviso 'Gerando sua planilha' apareceu)"))
+    raise PWTimeout(f"O aviso de planilha pronta não apareceu no sino em {TIMEOUT_JOB_S // 60} min")
 
 
 def exportar(page, nome):
@@ -358,13 +384,16 @@ def exportar(page, nome):
 
     page.on("download", ao_baixar)
     try:
+        # Horário do portal (o contexto roda em America/Sao_Paulo), 1 min de folga
+        desde = page.evaluate("""() => { const d = new Date(Date.now() - 60000), p = n => String(n).padStart(2, '0');
+            return '' + d.getFullYear() + p(d.getMonth() + 1) + p(d.getDate()) + p(d.getHours()) + p(d.getMinutes()); }""")
         with page.expect_response(
                 lambda r: "/orders/export" in r.url and r.request.method == "GET",
                 timeout=TIMEOUT_DOWNLOAD_MS) as info:
             botao.click()
         resp = info.value
         if resp.status == 202:
-            return _baixar_pelo_sino(page, arq)
+            return _baixar_pelo_sino(page, arq, desde)
         if not resp.ok:
             raise RuntimeError(f"Exportar planilha respondeu HTTP {resp.status}: {resp.text()[:200]}")
         # Resultado pequeno: o arquivo vem na hora e a tela dispara o download
