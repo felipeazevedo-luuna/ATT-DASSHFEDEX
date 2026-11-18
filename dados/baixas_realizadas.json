@@ -9760,9 +9760,16 @@
       "arrangement": "RODONAVES - 2026-11-17 08:31:30",
       "itens": 1,
       "task": "https://zecore.zebrands.mx/app/delivery-task/9f92525d19"
+    },
+    "SAL-ORD-261023ef67a291|119042": {
+      "data": "2026-11-18T12:01:21-03:00",
+      "sales_order": "SAL-ORD-261023ef67a291",
+      "nf": "119042",
+      "carrier": "Mira",
+      "origem": "ja_tinha_baixa"
     }
   },
-  "atualizado_em": "2026-11-18T11:27:33-03:00",
+  "atualizado_em": "2026-11-18T12:01:22-03:00",
   "problemas": {
     "SAL-ORD-261109c9e6569f|121476": {
       "vezes": 1,
@@ -9835,12 +9842,6 @@
       "ultima": "2026-11-17T08:22:04-03:00",
       "motivo": "Confirmei o Submit mas não consegui verificar que foi aceito. Confira o documento antes de rodar de novo — veja debug/",
       "avisado_em": "2026-11-17T08:22:04-03:00"
-    },
-    "SAL-ORD-261023ef67a291|119042": {
-      "vezes": 1,
-      "ultima": "2026-11-18T09:41:46-03:00",
-      "motivo": "Confirmei o Submit mas não consegui verificar que foi aceito. Confira o documento antes de rodar de novo — veja debug/",
-      "avisado_em": "2026-11-18T09:41:46-03:00"
     }
   }
 }
