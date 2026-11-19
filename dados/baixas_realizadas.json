@@ -10243,9 +10243,20 @@
       "arrangement": "RODONAVES - 2026-11-17 11:23:45",
       "itens": 1,
       "task": "https://zecore.zebrands.mx/app/delivery-task/b7a4103ab1"
+    },
+    "SAL-ORD-26111401c493e3|123057": {
+      "data": "2026-11-19T10:22:38-03:00",
+      "sales_order": "SAL-ORD-26111401c493e3",
+      "nf": "123057",
+      "carrier": "Rodonaves",
+      "status_transportadora": "ENTREGA FINALIZADA",
+      "master_guide": "35261142418313000104550010001230571829094361",
+      "arrangement": "RODONAVES - 2026-11-17 08:31:30",
+      "itens": 1,
+      "task": "https://zecore.zebrands.mx/app/delivery-task/619bc6f344"
     }
   },
-  "atualizado_em": "2026-11-19T09:41:52-03:00",
+  "atualizado_em": "2026-11-19T10:22:38-03:00",
   "problemas": {
     "SAL-ORD-2610307195923f|119839": {
       "vezes": 1,
