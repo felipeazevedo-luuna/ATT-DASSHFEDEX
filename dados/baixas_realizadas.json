@@ -10459,9 +10459,42 @@
       "arrangement": "RODONAVES - 2026-11-17 08:31:30",
       "itens": 1,
       "task": "https://zecore.zebrands.mx/app/delivery-task/6f8082ce89"
+    },
+    "SAL-ORD-2611134bb839d2|122965": {
+      "data": "2026-11-19T17:02:51-03:00",
+      "sales_order": "SAL-ORD-2611134bb839d2",
+      "nf": "122965",
+      "carrier": "Rodonaves",
+      "status_transportadora": "ENTREGA FINALIZADA",
+      "master_guide": "35261142418313000104550010001229651661271675",
+      "arrangement": "RODONAVES - 2026-11-16 09:53:11",
+      "itens": 1,
+      "task": "https://zecore.zebrands.mx/app/delivery-task/05e940019a"
+    },
+    "SAL-ORD-26111411d08ff8|123105": {
+      "data": "2026-11-19T17:03:41-03:00",
+      "sales_order": "SAL-ORD-26111411d08ff8",
+      "nf": "123105",
+      "carrier": "Rodonaves",
+      "status_transportadora": "ENTREGA FINALIZADA",
+      "master_guide": "35261142418313000104550010001231051829240707",
+      "arrangement": "RODONAVES - 2026-11-17 08:31:30",
+      "itens": 2,
+      "task": "https://zecore.zebrands.mx/app/delivery-task/0eb1d45c3c"
+    },
+    "SAL-ORD-2611170935eeae|123832": {
+      "data": "2026-11-19T17:04:31-03:00",
+      "sales_order": "SAL-ORD-2611170935eeae",
+      "nf": "123832",
+      "carrier": "Rodonaves",
+      "status_transportadora": "ENTREGA FINALIZADA",
+      "master_guide": "35261142418313000104550010001238321013195201",
+      "arrangement": "RODONAVES - 2026-11-19 11:40:36",
+      "itens": 2,
+      "task": "https://zecore.zebrands.mx/app/delivery-task/675cee1bf2"
     }
   },
-  "atualizado_em": "2026-11-19T16:02:18-03:00",
+  "atualizado_em": "2026-11-19T17:04:31-03:00",
   "problemas": {
     "SAL-ORD-2611110cee5371|122149": {
       "vezes": 1,
@@ -10516,6 +10549,12 @@
       "ultima": "2026-11-19T16:01:38-03:00",
       "motivo": "Depois de salvar o botão não virou Submit — veja debug/",
       "avisado_em": "2026-11-19T16:01:38-03:00"
+    },
+    "SAL-ORD-2611073bafac73|121104": {
+      "vezes": 1,
+      "ultima": "2026-11-19T17:02:14-03:00",
+      "motivo": "Confirmei o Submit mas não consegui verificar que foi aceito. Confira o documento antes de rodar de novo — veja debug/",
+      "avisado_em": "2026-11-19T17:02:14-03:00"
     }
   }
 }
