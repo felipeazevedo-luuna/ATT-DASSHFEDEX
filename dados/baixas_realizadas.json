@@ -10309,9 +10309,27 @@
       "arrangement": "RODONAVES - 2026-11-17 11:23:45",
       "itens": 1,
       "task": "https://zecore.zebrands.mx/app/delivery-task/8698110012"
+    },
+    "SAL-ORD-2611152507f3c7|123451": {
+      "data": "2026-11-19T12:01:45-03:00",
+      "sales_order": "SAL-ORD-2611152507f3c7",
+      "nf": "123451",
+      "carrier": "Rodonaves",
+      "status_transportadora": "ENTREGA FINALIZADA",
+      "master_guide": "35261142418313000104550010001234511915765218",
+      "arrangement": "RODONAVES - 2026-11-17 08:34:21",
+      "itens": 1,
+      "task": "https://zecore.zebrands.mx/app/delivery-task/c07137b092"
+    },
+    "SAL-ORD-261112a1766cc2|122600": {
+      "data": "2026-11-19T12:01:51-03:00",
+      "sales_order": "SAL-ORD-261112a1766cc2",
+      "nf": "122600",
+      "carrier": "Rodonaves",
+      "origem": "ja_tinha_baixa"
     }
   },
-  "atualizado_em": "2026-11-19T11:04:13-03:00",
+  "atualizado_em": "2026-11-19T12:01:51-03:00",
   "problemas": {
     "SAL-ORD-2610307195923f|119839": {
       "vezes": 1,
@@ -10372,12 +10390,6 @@
       "ultima": "2026-11-17T08:22:04-03:00",
       "motivo": "Confirmei o Submit mas não consegui verificar que foi aceito. Confira o documento antes de rodar de novo — veja debug/",
       "avisado_em": "2026-11-17T08:22:04-03:00"
-    },
-    "SAL-ORD-261112a1766cc2|122600": {
-      "vezes": 1,
-      "ultima": "2026-11-19T09:41:52-03:00",
-      "motivo": "Confirmei o Submit mas não consegui verificar que foi aceito. Confira o documento antes de rodar de novo — veja debug/",
-      "avisado_em": "2026-11-19T09:41:52-03:00"
     }
   }
 }
