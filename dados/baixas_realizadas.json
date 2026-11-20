@@ -10616,9 +10616,16 @@
       "nf": "123878",
       "carrier": "Rodonaves",
       "origem": "ja_tinha_baixa"
+    },
+    "SAL-ORD-261115c077caf9|123052": {
+      "data": "2026-11-20T17:02:00-03:00",
+      "sales_order": "SAL-ORD-261115c077caf9",
+      "nf": "123052",
+      "carrier": "Rodonaves",
+      "origem": "ja_tinha_baixa"
     }
   },
-  "atualizado_em": "2026-11-20T14:50:07-03:00",
+  "atualizado_em": "2026-11-20T17:02:00-03:00",
   "problemas": {
     "SAL-ORD-261114dbca3447|123094": {
       "vezes": 1,
@@ -10627,16 +10634,10 @@
       "avisado_em": "2026-11-17T08:22:04-03:00"
     },
     "SAL-ORD-261110701c6708|122009": {
-      "vezes": 1,
-      "ultima": "2026-11-20T14:49:03-03:00",
+      "vezes": 2,
+      "ultima": "2026-11-20T17:01:51-03:00",
       "motivo": "Locator.click: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator(\".grid-row[data-idx]\").first.locator(\".btn-open-row\").first\n    - locator resolved to <div class=\"btn-open-row\">…</div>\n  - a",
       "avisado_em": "2026-11-20T14:49:03-03:00"
-    },
-    "SAL-ORD-261115c077caf9|123052": {
-      "vezes": 1,
-      "ultima": "2026-11-20T14:50:07-03:00",
-      "motivo": "Confirmei o Submit mas não consegui verificar que foi aceito. Confira o documento antes de rodar de novo — veja debug/",
-      "avisado_em": "2026-11-20T14:50:07-03:00"
     }
   }
 }
