@@ -10623,9 +10623,20 @@
       "nf": "123052",
       "carrier": "Rodonaves",
       "origem": "ja_tinha_baixa"
+    },
+    "SAL-ORD-2611010dbd86ce|119934": {
+      "data": "2026-11-21T10:22:48-03:00",
+      "sales_order": "SAL-ORD-2611010dbd86ce",
+      "nf": "119934",
+      "carrier": "Mira",
+      "status_transportadora": "MERCADORIA ENTREGUE",
+      "master_guide": "35261142418313000104550010001199341705167586",
+      "arrangement": "Mira Transportes - 2026-11-03 08:12:24",
+      "itens": 1,
+      "task": "https://zecore.zebrands.mx/app/delivery-task/510a91c349"
     }
   },
-  "atualizado_em": "2026-11-21T09:21:37-03:00",
+  "atualizado_em": "2026-11-21T10:22:48-03:00",
   "problemas": {
     "SAL-ORD-261114dbca3447|123094": {
       "vezes": 1,
@@ -10638,6 +10649,12 @@
       "ultima": "2026-11-21T09:21:37-03:00",
       "motivo": "Locator.click: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator(\".grid-row[data-idx]\").first.locator(\".btn-open-row\").first\n    - locator resolved to <div class=\"btn-open-row\">…</div>\n  - a",
       "avisado_em": "2026-11-20T14:49:03-03:00"
+    },
+    "SAL-ORD-2611087e49fda7|121454": {
+      "vezes": 1,
+      "ultima": "2026-11-21T10:22:03-03:00",
+      "motivo": "Confirmei o Submit mas não consegui verificar que foi aceito. Confira o documento antes de rodar de novo — veja debug/",
+      "avisado_em": "2026-11-21T10:22:03-03:00"
     }
   }
 }
