@@ -11007,9 +11007,42 @@
       "arrangement": "Mira Transportes - 2026-11-10 08:14:33",
       "itens": 1,
       "task": "https://zecore.zebrands.mx/app/delivery-task/a80ef1e80f"
+    },
+    "SAL-ORD-26102599f14612|120816": {
+      "data": "2026-11-23T16:21:42-03:00",
+      "sales_order": "SAL-ORD-26102599f14612",
+      "nf": "120816",
+      "carrier": "Mira",
+      "status_transportadora": "MERCADORIA PRE-ENTREGUE (MOBILE)",
+      "master_guide": "35261142418313000104550010001208161965298035",
+      "arrangement": "Mira Transportes - 2026-11-06 08:05:20",
+      "itens": 1,
+      "task": "https://zecore.zebrands.mx/app/delivery-task/39585ca795"
+    },
+    "SAL-ORD-26111500c12dd8|123078": {
+      "data": "2026-11-23T16:22:26-03:00",
+      "sales_order": "SAL-ORD-26111500c12dd8",
+      "nf": "123078",
+      "carrier": "Mira",
+      "status_transportadora": "MERCADORIA PRE-ENTREGUE (MOBILE)",
+      "master_guide": "35261142418313000104550010001230781829148526",
+      "arrangement": "Mira Transportes - 2026-11-17 08:32:09",
+      "itens": 1,
+      "task": "https://zecore.zebrands.mx/app/delivery-task/d36261bdc8"
+    },
+    "SAL-ORD-26110397303dba|121447": {
+      "data": "2026-11-23T16:23:28-03:00",
+      "sales_order": "SAL-ORD-26110397303dba",
+      "nf": "121447",
+      "carrier": "Mira",
+      "status_transportadora": "MERCADORIA ENTREGUE",
+      "master_guide": "35261142418313000104550010001214471245580807",
+      "arrangement": "Mira Transportes - 2026-11-10 14:27:10",
+      "itens": 1,
+      "task": "https://zecore.zebrands.mx/app/delivery-task/df475c316d"
     }
   },
-  "atualizado_em": "2026-11-23T15:21:47-03:00",
+  "atualizado_em": "2026-11-23T16:23:28-03:00",
   "problemas": {
     "SAL-ORD-261114dbca3447|123094": {
       "vezes": 1,
