@@ -11769,8 +11769,19 @@
       "arrangement": "Mira Transportes - 2026-11-09 08:09:02",
       "itens": 2,
       "task": "https://zecore.zebrands.mx/app/delivery-task/8809759910"
+    },
+    "SAL-ORD-261105e3cf0f30|120724": {
+      "data": "2026-11-24T20:21:44-03:00",
+      "sales_order": "SAL-ORD-261105e3cf0f30",
+      "nf": "120724",
+      "carrier": "Rodonaves",
+      "status_transportadora": "ENTREGA FINALIZADA",
+      "master_guide": "35261142418313000104550010001207241963538680",
+      "arrangement": "RODONAVES - 2026-11-06 08:04:30",
+      "itens": 3,
+      "task": "https://zecore.zebrands.mx/app/delivery-task/ff11cba925"
     }
   },
-  "atualizado_em": "2026-11-24T19:41:36-03:00",
+  "atualizado_em": "2026-11-24T20:21:45-03:00",
   "problemas": {}
 }
