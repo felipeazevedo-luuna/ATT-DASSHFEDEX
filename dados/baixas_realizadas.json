@@ -11615,8 +11615,52 @@
       "arrangement": "Mira Transportes - 2026-11-11 08:06:30",
       "itens": 1,
       "task": "https://zecore.zebrands.mx/app/delivery-task/2334f2b903"
+    },
+    "SAL-ORD-2611178714c53f|123448": {
+      "data": "2026-11-24T17:41:38-03:00",
+      "sales_order": "SAL-ORD-2611178714c53f",
+      "nf": "123448",
+      "carrier": "Rodonaves",
+      "status_transportadora": "ENTREGA FINALIZADA",
+      "master_guide": "35261142418313000104550010001234481915759050",
+      "arrangement": "RODONAVES - 2026-11-17 08:34:21",
+      "itens": 1,
+      "task": "https://zecore.zebrands.mx/app/delivery-task/6f07b4c44a"
+    },
+    "SAL-ORD-2611198e9b611f|124311": {
+      "data": "2026-11-24T17:42:15-03:00",
+      "sales_order": "SAL-ORD-2611198e9b611f",
+      "nf": "124311",
+      "carrier": "Rodonaves",
+      "status_transportadora": "ENTREGA FINALIZADA",
+      "master_guide": "35261142418313000104550010001243111260590864",
+      "arrangement": "RODONAVES - 2026-11-23 08:10:28",
+      "itens": 4,
+      "task": "https://zecore.zebrands.mx/app/delivery-task/d3fc8a368a"
+    },
+    "SAL-ORD-2611225e273d9b|124532": {
+      "data": "2026-11-24T17:42:51-03:00",
+      "sales_order": "SAL-ORD-2611225e273d9b",
+      "nf": "124532",
+      "carrier": "Rodonaves",
+      "status_transportadora": "ENTREGA FINALIZADA",
+      "master_guide": "35261142418313000104550010001245321433933041",
+      "arrangement": "RODONAVES - 2026-11-24 08:27:18",
+      "itens": 1,
+      "task": "https://zecore.zebrands.mx/app/delivery-task/b260b28306"
+    },
+    "SAL-ORD-2611202182b63c|124307": {
+      "data": "2026-11-24T17:43:42-03:00",
+      "sales_order": "SAL-ORD-2611202182b63c",
+      "nf": "124307",
+      "carrier": "Rodonaves",
+      "status_transportadora": "ENTREGA FINALIZADA",
+      "master_guide": "35261142418313000104550010001243071260560652",
+      "arrangement": "RODONAVES - 2026-11-23 08:10:28",
+      "itens": 2,
+      "task": "https://zecore.zebrands.mx/app/delivery-task/493c781cee"
     }
   },
-  "atualizado_em": "2026-11-24T16:43:04-03:00",
+  "atualizado_em": "2026-11-24T17:43:43-03:00",
   "problemas": {}
 }
