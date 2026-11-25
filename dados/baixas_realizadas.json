@@ -11959,9 +11959,42 @@
       "arrangement": "RODONAVES - 2026-11-23 08:10:28",
       "itens": 1,
       "task": "https://zecore.zebrands.mx/app/delivery-task/0324417a90"
+    },
+    "SAL-ORD-2611208eb68720|124282": {
+      "data": "2026-11-25T13:42:44-03:00",
+      "sales_order": "SAL-ORD-2611208eb68720",
+      "nf": "124282",
+      "carrier": "Rodonaves",
+      "status_transportadora": "ENTREGA FINALIZADA",
+      "master_guide": "35261142418313000104550010001242821260397823",
+      "arrangement": "RODONAVES - 2026-11-23 08:10:28",
+      "itens": 1,
+      "task": "https://zecore.zebrands.mx/app/delivery-task/b7b52964c4"
+    },
+    "SAL-ORD-261101bf38d1f1|122625": {
+      "data": "2026-11-25T13:43:20-03:00",
+      "sales_order": "SAL-ORD-261101bf38d1f1",
+      "nf": "122625",
+      "carrier": "Mira",
+      "status_transportadora": "MERCADORIA PRE-ENTREGUE (MOBILE)",
+      "master_guide": "35261142418313000104550010001226251570156642",
+      "arrangement": "Mira Transportes - 2026-11-16 08:36:14",
+      "itens": 7,
+      "task": "https://zecore.zebrands.mx/app/delivery-task/5a84b0f9ae"
+    },
+    "SAL-ORD-261121aad757e0|124517": {
+      "data": "2026-11-25T13:43:56-03:00",
+      "sales_order": "SAL-ORD-261121aad757e0",
+      "nf": "124517",
+      "carrier": "Rodonaves",
+      "status_transportadora": "ENTREGA FINALIZADA",
+      "master_guide": "35261142418313000104550010001245171433901356",
+      "arrangement": "RODONAVES - 2026-11-24 08:27:18",
+      "itens": 2,
+      "task": "https://zecore.zebrands.mx/app/delivery-task/c0d672f95b"
     }
   },
-  "atualizado_em": "2026-11-25T12:42:15-03:00",
+  "atualizado_em": "2026-11-25T13:43:57-03:00",
   "problemas": {
     "SAL-ORD-261119d0fde8d7|124302": {
       "vezes": 1,
@@ -11974,6 +12007,12 @@
       "ultima": "2026-11-25T12:03:35-03:00",
       "motivo": "Locator.click: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator(\".grid-row[data-idx]\").first.locator(\".btn-open-row\").first\n    - locator resolved to <div class=\"btn-open-row\">…</div>\n  - a",
       "avisado_em": "2026-11-25T12:03:35-03:00"
+    },
+    "SAL-ORD-261122cddbad5e|124521": {
+      "vezes": 1,
+      "ultima": "2026-11-25T13:42:08-03:00",
+      "motivo": "Confirmei o Submit mas não consegui verificar que foi aceito. Confira o documento antes de rodar de novo — veja debug/",
+      "avisado_em": "2026-11-25T13:42:08-03:00"
     }
   }
 }
