@@ -12269,15 +12269,43 @@
       "nf": "124301",
       "carrier": "Rodonaves",
       "origem": "ja_tinha_baixa"
+    },
+    "SAL-ORD-261122fe45c746|124519": {
+      "data": "2026-11-26T10:22:34-03:00",
+      "sales_order": "SAL-ORD-261122fe45c746",
+      "nf": "124519",
+      "carrier": "Rodonaves",
+      "status_transportadora": "ENTREGA FINALIZADA",
+      "master_guide": "35261142418313000104550010001245191433905879",
+      "arrangement": "RODONAVES - 2026-11-24 08:27:18",
+      "itens": 1,
+      "task": "https://zecore.zebrands.mx/app/delivery-task/f69080fd31"
+    },
+    "SAL-ORD-2611212127b50f|124538": {
+      "data": "2026-11-26T10:23:11-03:00",
+      "sales_order": "SAL-ORD-2611212127b50f",
+      "nf": "124538",
+      "carrier": "Rodonaves",
+      "status_transportadora": "ENTREGA FINALIZADA",
+      "master_guide": "35261142418313000104550010001245381433940726",
+      "arrangement": "RODONAVES - 2026-11-24 08:27:18",
+      "itens": 1,
+      "task": "https://zecore.zebrands.mx/app/delivery-task/d15ebce7c5"
     }
   },
-  "atualizado_em": "2026-11-26T09:21:55-03:00",
+  "atualizado_em": "2026-11-26T10:23:11-03:00",
   "problemas": {
     "SAL-ORD-261119a3654fa4|124299": {
       "vezes": 8,
       "ultima": "2026-11-26T09:21:44-03:00",
       "motivo": "Locator.click: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator(\".grid-row[data-idx]\").first.locator(\".btn-open-row\").first\n    - locator resolved to <div class=\"btn-open-row\">…</div>\n  - a",
       "avisado_em": "2026-11-25T12:03:35-03:00"
+    },
+    "SAL-ORD-26102599f14612|122975": {
+      "vezes": 1,
+      "ultima": "2026-11-26T10:21:57-03:00",
+      "motivo": "Confirmei o Submit mas não consegui verificar que foi aceito. Confira o documento antes de rodar de novo — veja debug/",
+      "avisado_em": "2026-11-26T10:21:57-03:00"
     }
   }
 }
