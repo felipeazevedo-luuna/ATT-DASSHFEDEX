@@ -12818,9 +12818,20 @@
       "nf": "124733",
       "carrier": "Rodonaves",
       "origem": "ja_tinha_baixa"
+    },
+    "SAL-ORD-261122b99a3e2a|124527": {
+      "data": "2026-11-26T18:22:48-03:00",
+      "sales_order": "SAL-ORD-261122b99a3e2a",
+      "nf": "124527",
+      "carrier": "Rodonaves",
+      "status_transportadora": "ENTREGA FINALIZADA",
+      "master_guide": "35261142418313000104550010001245271433920764",
+      "arrangement": "RODONAVES - 2026-11-24 08:27:18",
+      "itens": 1,
+      "task": "https://zecore.zebrands.mx/app/delivery-task/5af808cd55"
     }
   },
-  "atualizado_em": "2026-11-26T18:01:44-03:00",
+  "atualizado_em": "2026-11-26T18:22:48-03:00",
   "problemas": {
     "SAL-ORD-261119e9c274b7|124306": {
       "vezes": 4,
@@ -12833,6 +12844,12 @@
       "ultima": "2026-11-26T17:43:21-03:00",
       "motivo": "Locator.click: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator(\".grid-row[data-idx]\").first.locator(\".btn-open-row\").first\n    - locator resolved to <div class=\"btn-open-row\">…</div>\n  - a",
       "avisado_em": "2026-11-26T17:43:21-03:00"
+    },
+    "SAL-ORD-261026a230175f|120366": {
+      "vezes": 1,
+      "ultima": "2026-11-26T18:21:59-03:00",
+      "motivo": "Depois de salvar o botão não virou Submit — veja debug/",
+      "avisado_em": "2026-11-26T18:21:59-03:00"
     }
   }
 }
