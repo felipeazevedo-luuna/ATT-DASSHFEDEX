@@ -12873,9 +12873,20 @@
       "arrangement": "RODONAVES - 2026-11-23 08:10:28",
       "itens": 1,
       "task": "https://zecore.zebrands.mx/app/delivery-task/4295a13a9c"
+    },
+    "SAL-ORD-261026a230175f|120366": {
+      "data": "2026-11-26T20:41:33-03:00",
+      "sales_order": "SAL-ORD-261026a230175f",
+      "nf": "120366",
+      "carrier": "Mira",
+      "status_transportadora": "MERCADORIA ENTREGUE",
+      "master_guide": "35261142418313000104550010001203661797909421",
+      "arrangement": "Mira Transportes - 2026-11-04 08:17:13",
+      "itens": 1,
+      "task": "https://zecore.zebrands.mx/app/delivery-task/dfce30e00e"
     }
   },
-  "atualizado_em": "2026-11-26T20:22:15-03:00",
+  "atualizado_em": "2026-11-26T20:41:34-03:00",
   "problemas": {
     "SAL-ORD-261119e9c274b7|124306": {
       "vezes": 5,
@@ -12888,12 +12899,6 @@
       "ultima": "2026-11-26T20:01:37-03:00",
       "motivo": "Locator.click: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator(\".grid-row[data-idx]\").first.locator(\".btn-open-row\").first\n    - locator resolved to <div class=\"btn-open-row\">…</div>\n  - a",
       "avisado_em": "2026-11-26T17:43:21-03:00"
-    },
-    "SAL-ORD-261026a230175f|120366": {
-      "vezes": 1,
-      "ultima": "2026-11-26T18:21:59-03:00",
-      "motivo": "Depois de salvar o botão não virou Submit — veja debug/",
-      "avisado_em": "2026-11-26T18:21:59-03:00"
     }
   }
 }
