@@ -12326,11 +12326,11 @@
       "task": "https://zecore.zebrands.mx/app/delivery-task/8b67ec1496"
     }
   },
-  "atualizado_em": "2026-11-26T11:03:29-03:00",
+  "atualizado_em": "2026-11-26T11:42:00-03:00",
   "problemas": {
     "SAL-ORD-261119a3654fa4|124299": {
-      "vezes": 8,
-      "ultima": "2026-11-26T09:21:44-03:00",
+      "vezes": 9,
+      "ultima": "2026-11-26T11:42:00-03:00",
       "motivo": "Locator.click: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator(\".grid-row[data-idx]\").first.locator(\".btn-open-row\").first\n    - locator resolved to <div class=\"btn-open-row\">…</div>\n  - a",
       "avisado_em": "2026-11-25T12:03:35-03:00"
     },
