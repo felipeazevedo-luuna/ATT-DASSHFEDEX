@@ -12920,15 +12920,15 @@
       "arrangement": "Mira Transportes - 2026-11-16 08:36:14",
       "itens": 1,
       "task": "https://zecore.zebrands.mx/app/delivery-task/d8d14a3159"
+    },
+    "SAL-ORD-2611097c1f17c4|122205": {
+      "data": "2026-11-27T09:21:00-03:00",
+      "sales_order": "SAL-ORD-2611097c1f17c4",
+      "nf": "122205",
+      "carrier": "Mira",
+      "origem": "ja_tinha_baixa"
     }
   },
-  "atualizado_em": "2026-11-27T09:01:50-03:00",
-  "problemas": {
-    "SAL-ORD-2611097c1f17c4|122205": {
-      "vezes": 1,
-      "ultima": "2026-11-27T07:02:23-03:00",
-      "motivo": "Confirmei o Submit mas não consegui verificar que foi aceito. Confira o documento antes de rodar de novo — veja debug/",
-      "avisado_em": "2026-11-27T07:02:23-03:00"
-    }
-  }
+  "atualizado_em": "2026-11-27T09:21:00-03:00",
+  "problemas": {}
 }
