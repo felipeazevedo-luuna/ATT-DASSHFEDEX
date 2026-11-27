@@ -12911,6 +12911,13 @@
       "origem": "ja_tinha_baixa"
     }
   },
-  "atualizado_em": "2026-11-26T22:40:58-03:00",
-  "problemas": {}
+  "atualizado_em": "2026-11-27T07:02:23-03:00",
+  "problemas": {
+    "SAL-ORD-2611097c1f17c4|122205": {
+      "vezes": 1,
+      "ultima": "2026-11-27T07:02:23-03:00",
+      "motivo": "Confirmei o Submit mas não consegui verificar que foi aceito. Confira o documento antes de rodar de novo — veja debug/",
+      "avisado_em": "2026-11-27T07:02:23-03:00"
+    }
+  }
 }
