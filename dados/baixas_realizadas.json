@@ -12927,8 +12927,19 @@
       "nf": "122205",
       "carrier": "Mira",
       "origem": "ja_tinha_baixa"
+    },
+    "SAL-ORD-2611216b37c6c1|124507": {
+      "data": "2026-11-27T09:41:29-03:00",
+      "sales_order": "SAL-ORD-2611216b37c6c1",
+      "nf": "124507",
+      "carrier": "Rodonaves",
+      "status_transportadora": "ENTREGA FINALIZADA",
+      "master_guide": "35261142418313000104550010001245071433881871",
+      "arrangement": "RODONAVES - 2026-11-24 08:27:18",
+      "itens": 1,
+      "task": "https://zecore.zebrands.mx/app/delivery-task/c58c4f3a4e"
     }
   },
-  "atualizado_em": "2026-11-27T09:21:00-03:00",
+  "atualizado_em": "2026-11-27T09:41:29-03:00",
   "problemas": {}
 }
