@@ -13081,8 +13081,48 @@
       "arrangement": "RODONAVES - 2026-11-25 08:22:21",
       "itens": 1,
       "task": "https://zecore.zebrands.mx/app/delivery-task/def1adb042"
+    },
+    "SAL-ORD-26112067e460bd|124520": {
+      "data": "2026-11-27T12:02:25-03:00",
+      "sales_order": "SAL-ORD-26112067e460bd",
+      "nf": "124520",
+      "carrier": "Rodonaves",
+      "status_transportadora": "ENTREGA FINALIZADA",
+      "master_guide": "35261142418313000104550010001245201433909760",
+      "arrangement": "RODONAVES - 2026-11-24 08:27:18",
+      "itens": 1,
+      "task": "https://zecore.zebrands.mx/app/delivery-task/67349aee31"
+    },
+    "SAL-ORD-261125b05feb9e|125388": {
+      "data": "2026-11-27T12:03:01-03:00",
+      "sales_order": "SAL-ORD-261125b05feb9e",
+      "nf": "125388",
+      "carrier": "Rodonaves",
+      "status_transportadora": "ENTREGA FINALIZADA",
+      "master_guide": "35261142418313000104550010001253881693873439",
+      "arrangement": "RODONAVES - 2026-11-26 08:45:27",
+      "itens": 1,
+      "task": "https://zecore.zebrands.mx/app/delivery-task/bdf7a2136a"
+    },
+    "SAL-ORD-2611252f4fd001|125396": {
+      "data": "2026-11-27T12:03:38-03:00",
+      "sales_order": "SAL-ORD-2611252f4fd001",
+      "nf": "125396",
+      "carrier": "Rodonaves",
+      "status_transportadora": "ENTREGA FINALIZADA",
+      "master_guide": "35261142418313000104550010001253961693887520",
+      "arrangement": "RODONAVES - 2026-11-26 08:45:27",
+      "itens": 4,
+      "task": "https://zecore.zebrands.mx/app/delivery-task/11646aea88"
     }
   },
-  "atualizado_em": "2026-11-27T11:26:44-03:00",
-  "problemas": {}
+  "atualizado_em": "2026-11-27T12:03:39-03:00",
+  "problemas": {
+    "SAL-ORD-261119c083eed6|124327": {
+      "vezes": 1,
+      "ultima": "2026-11-27T12:01:48-03:00",
+      "motivo": "Locator.click: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator(\".grid-row[data-idx]\").first.locator(\".btn-open-row\").first\n    - locator resolved to <div class=\"btn-open-row\">…</div>\n  - a",
+      "avisado_em": "2026-11-27T12:01:48-03:00"
+    }
+  }
 }
