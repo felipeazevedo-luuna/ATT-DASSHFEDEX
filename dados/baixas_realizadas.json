@@ -13433,9 +13433,31 @@
       "arrangement": "Mira Transportes - 2026-11-13 14:33:58",
       "itens": 1,
       "task": "https://zecore.zebrands.mx/app/delivery-task/ba280f5b3d"
+    },
+    "SAL-ORD-2611201d168132|124292": {
+      "data": "2026-11-27T17:22:25-03:00",
+      "sales_order": "SAL-ORD-2611201d168132",
+      "nf": "124292",
+      "carrier": "Rodonaves",
+      "status_transportadora": "ENTREGA FINALIZADA",
+      "master_guide": "35261142418313000104550010001242921260417430",
+      "arrangement": "RODONAVES - 2026-11-23 08:10:28",
+      "itens": 7,
+      "task": "https://zecore.zebrands.mx/app/delivery-task/8dae4d9337"
+    },
+    "SAL-ORD-261124e99249dd|125037": {
+      "data": "2026-11-27T17:23:19-03:00",
+      "sales_order": "SAL-ORD-261124e99249dd",
+      "nf": "125037",
+      "carrier": "Rodonaves",
+      "status_transportadora": "ENTREGA FINALIZADA",
+      "master_guide": "35261142418313000104550010001250371606305245",
+      "arrangement": "RODONAVES - 2026-11-25 08:26:03",
+      "itens": 1,
+      "task": "https://zecore.zebrands.mx/app/delivery-task/2279356619"
     }
   },
-  "atualizado_em": "2026-11-27T17:06:23-03:00",
+  "atualizado_em": "2026-11-27T17:23:20-03:00",
   "problemas": {
     "SAL-ORD-261119c083eed6|124327": {
       "vezes": 3,
@@ -13444,22 +13466,10 @@
       "avisado_em": "2026-11-27T12:01:48-03:00"
     },
     "SAL-ORD-2611204f78f101|124303": {
-      "vezes": 2,
-      "ultima": "2026-11-27T15:08:27-03:00",
+      "vezes": 3,
+      "ultima": "2026-11-27T17:21:41-03:00",
       "motivo": "Locator.click: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator(\".grid-row[data-idx]\").first.locator(\".btn-open-row\").first\n    - locator resolved to <div class=\"btn-open-row\">…</div>\n  - a",
       "avisado_em": "2026-11-27T12:42:09-03:00"
-    },
-    "SAL-ORD-2611201d168132|124292": {
-      "vezes": 1,
-      "ultima": "2026-11-27T15:03:40-03:00",
-      "motivo": "Depois de salvar o botão não virou Submit — veja debug/",
-      "avisado_em": "2026-11-27T15:03:40-03:00"
-    },
-    "SAL-ORD-261124e99249dd|125037": {
-      "vezes": 1,
-      "ultima": "2026-11-27T15:05:29-03:00",
-      "motivo": "Depois de salvar o botão não virou Submit — veja debug/",
-      "avisado_em": "2026-11-27T15:05:29-03:00"
     }
   }
 }
