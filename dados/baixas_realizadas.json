@@ -13561,9 +13561,31 @@
       "nf": "125380",
       "carrier": "Rodonaves",
       "origem": "ja_tinha_baixa"
+    },
+    "SAL-ORD-26111302d19b5e|122973": {
+      "data": "2026-11-27T22:41:35-03:00",
+      "sales_order": "SAL-ORD-26111302d19b5e",
+      "nf": "122973",
+      "carrier": "Mira",
+      "status_transportadora": "MERCADORIA ENTREGUE",
+      "master_guide": "35261142418313000104550010001229731661334920",
+      "arrangement": "Mira Transportes - 2026-11-16 09:57:10",
+      "itens": 2,
+      "task": "https://zecore.zebrands.mx/app/delivery-task/f9d691fab0"
+    },
+    "SAL-ORD-261119ae66a38d|123869": {
+      "data": "2026-11-27T22:42:12-03:00",
+      "sales_order": "SAL-ORD-261119ae66a38d",
+      "nf": "123869",
+      "carrier": "Mira",
+      "status_transportadora": "MERCADORIA ENTREGUE",
+      "master_guide": "35261142418313000104550010001238691087690699",
+      "arrangement": "Mira Transportes - 2026-11-19 08:23:31",
+      "itens": 1,
+      "task": "https://zecore.zebrands.mx/app/delivery-task/fd4d7b90bc"
     }
   },
-  "atualizado_em": "2026-11-27T22:01:54-03:00",
+  "atualizado_em": "2026-11-27T22:42:12-03:00",
   "problemas": {
     "SAL-ORD-261119c083eed6|124327": {
       "vezes": 5,
